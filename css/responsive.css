@@ -1,0 +1,672 @@
+/* ========================================
+   MORINGA OLEÍFERA - ESTILOS RESPONSIVOS
+   ======================================== */
+
+/* Tablets (até 992px) */
+@media (max-width: 992px) {
+    .container {
+        padding: 0 30px;
+    }
+
+    /* Typography */
+    h1 { font-size: 2.5rem; }
+    h2 { font-size: 2rem; }
+    h3 { font-size: 1.5rem; }
+
+    /* Navigation */
+    .nav-menu {
+        position: fixed;
+        top: 70px;
+        left: -100%;
+        width: 100%;
+        height: calc(100vh - 70px);
+        background: var(--white);
+        flex-direction: column;
+        padding: 2rem;
+        gap: 1rem;
+        box-shadow: var(--shadow-lg);
+        transition: var(--transition);
+        overflow-y: auto;
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .mobile-menu-btn {
+        display: block;
+    }
+
+    /* Hero Section */
+    .hero-content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .hero-title {
+        font-size: 2.5rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.3rem;
+    }
+
+    .hero-badges {
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .hero-cta {
+        flex-direction: column;
+    }
+
+    .hero-cta .btn {
+        width: 100%;
+        justify-content: center;
+    }
+
+    /* About Section */
+    .about-content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    /* Benefits Grid */
+    .benefits-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    /* Product Section */
+    .product-content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    /* Pricing Cards */
+    .pricing-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .pricing-card.featured {
+        transform: scale(1);
+    }
+
+    /* Testimonials */
+    .testimonials-summary {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    /* Guarantee */
+    .guarantee-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    /* Footer */
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+}
+
+/* Mobile (até 768px) */
+@media (max-width: 768px) {
+    section {
+        padding: 60px 0;
+    }
+
+    .container {
+        padding: 0 20px;
+    }
+
+    /* Typography */
+    h1 { font-size: 2rem; }
+    h2 { font-size: 1.75rem; }
+    h3 { font-size: 1.3rem; }
+    h4 { font-size: 1.1rem; }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    /* Hero Section */
+    .hero {
+        min-height: auto;
+        padding-top: 100px;
+        padding-bottom: 60px;
+    }
+
+    .hero-title {
+        font-size: 2rem;
+        line-height: 1.2;
+    }
+
+    .hero-subtitle {
+        font-size: 1.1rem;
+    }
+
+    .hero-description {
+        font-size: 1rem;
+    }
+
+    .hero-badges {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+
+    .badge-item {
+        padding: 10px;
+    }
+
+    .badge-item i {
+        font-size: 1.5rem;
+    }
+
+    .badge-item span {
+        font-size: 0.75rem;
+    }
+
+    /* Buttons */
+    .btn {
+        padding: 10px 25px;
+        font-size: 0.95rem;
+    }
+
+    .btn-large {
+        padding: 14px 30px;
+        font-size: 1rem;
+    }
+
+    /* WhatsApp Float */
+    .whatsapp-float {
+        width: 50px;
+        height: 50px;
+        font-size: 24px;
+        bottom: 20px;
+        right: 20px;
+    }
+
+    /* Section Headers */
+    .section-header {
+        margin-bottom: 3rem;
+    }
+
+    .section-badge {
+        font-size: 0.85rem;
+        padding: 6px 16px;
+    }
+
+    /* Nutrient Grid */
+    .nutrient-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .nutrient-card {
+        padding: 1rem;
+    }
+
+    .nutrient-card i {
+        font-size: 1.5rem;
+    }
+
+    .nutrient-card h3 {
+        font-size: 1.1rem;
+    }
+
+    /* Benefits Grid */
+    .benefits-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .benefit-card {
+        padding: 1.5rem;
+    }
+
+    .benefit-icon {
+        width: 60px;
+        height: 60px;
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    /* Product Section */
+    .product-image-gallery {
+        margin-bottom: 20px;
+    }
+
+    .product-badges {
+        position: static;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 15px;
+    }
+
+    .product-details h3 {
+        font-size: 1.5rem;
+    }
+
+    .product-rating {
+        font-size: 0.9rem;
+    }
+
+    .specifications-table h4 {
+        font-size: 1.1rem;
+    }
+
+    .specifications-table td {
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+
+    .usage-instructions h4 {
+        font-size: 1.1rem;
+    }
+
+    .usage-instructions li {
+        font-size: 0.9rem;
+    }
+
+    .price-current {
+        font-size: 2.5rem;
+    }
+
+    .product-cta {
+        padding: 1.5rem;
+    }
+
+    /* Certifications */
+    .certifications-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .cert-card {
+        padding: 1.5rem;
+    }
+
+    .cert-icon {
+        width: 60px;
+        height: 60px;
+        font-size: 1.5rem;
+    }
+
+    .trust-statement {
+        padding: 1.5rem;
+    }
+
+    .trust-statement i {
+        font-size: 2rem;
+    }
+
+    .trust-statement p {
+        font-size: 1rem;
+    }
+
+    /* Testimonials */
+    .testimonials-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .testimonial-card {
+        padding: 1.5rem;
+    }
+
+    .summary-number {
+        font-size: 2.5rem;
+    }
+
+    .summary-label {
+        font-size: 0.85rem;
+    }
+
+    /* Guarantee */
+    .guarantee-content {
+        padding: 2rem 1.5rem;
+    }
+
+    .guarantee-icon {
+        font-size: 3rem;
+    }
+
+    .guarantee-text h2 {
+        font-size: 1.5rem;
+    }
+
+    .guarantee-text p {
+        font-size: 1rem;
+    }
+
+    .guarantee-features {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .guarantee-item {
+        padding: 1.5rem;
+    }
+
+    .guarantee-item i {
+        font-size: 2rem;
+    }
+
+    /* Final CTA */
+    .final-cta-content h2 {
+        font-size: 2rem;
+    }
+
+    .final-cta-content > p {
+        font-size: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    .pricing-card {
+        padding: 2rem 1.5rem;
+    }
+
+    .pricing-header h3 {
+        font-size: 1.3rem;
+    }
+
+    .current-price {
+        font-size: 2.5rem;
+    }
+
+    .pricing-features li {
+        font-size: 0.9rem;
+    }
+
+    .payment-methods {
+        margin-bottom: 1.5rem;
+    }
+
+    .payment-icons {
+        flex-wrap: wrap;
+        gap: 1rem;
+        font-size: 1.5rem;
+    }
+
+    .urgency-box {
+        padding: 1rem;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .urgency-box i {
+        font-size: 1.5rem;
+    }
+
+    .urgency-box p {
+        font-size: 0.9rem;
+    }
+
+    /* FAQ */
+    .faq-question {
+        padding: 1rem;
+    }
+
+    .faq-question h3 {
+        font-size: 1rem;
+    }
+
+    .faq-answer p {
+        padding: 0 1rem 1rem;
+        font-size: 0.9rem;
+    }
+
+    /* Contact */
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .contact-card {
+        padding: 2rem 1.5rem;
+    }
+
+    .contact-icon {
+        width: 60px;
+        height: 60px;
+        font-size: 1.5rem;
+    }
+
+    .contact-card h3 {
+        font-size: 1.1rem;
+    }
+
+    /* Footer */
+    .footer {
+        padding: 3rem 0 1.5rem;
+    }
+
+    .footer-content {
+        gap: 2rem;
+    }
+
+    .footer-brand {
+        font-size: 1.3rem;
+    }
+
+    .footer-section h3 {
+        font-size: 1.1rem;
+    }
+
+    .footer-bottom {
+        padding-top: 1.5rem;
+    }
+}
+
+/* Small Mobile (até 480px) */
+@media (max-width: 480px) {
+    /* Typography */
+    h1 { font-size: 1.75rem; }
+    h2 { font-size: 1.5rem; }
+    h3 { font-size: 1.2rem; }
+
+    .section-title {
+        font-size: 1.75rem;
+    }
+
+    /* Hero */
+    .hero-title {
+        font-size: 1.75rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+
+    .hero-badges {
+        grid-template-columns: 1fr;
+    }
+
+    /* Buttons */
+    .btn {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+
+    .btn-large {
+        padding: 12px 25px;
+        font-size: 0.95rem;
+    }
+
+    /* WhatsApp Float */
+    .whatsapp-float {
+        width: 45px;
+        height: 45px;
+        font-size: 20px;
+        bottom: 15px;
+        right: 15px;
+    }
+
+    /* Specifications Table */
+    .specifications-table td {
+        padding: 8px;
+        font-size: 0.85rem;
+    }
+
+    .specifications-table td:first-child {
+        width: 35%;
+    }
+
+    /* Price */
+    .price-current {
+        font-size: 2rem;
+    }
+
+    .price-installment {
+        font-size: 0.85rem;
+    }
+
+    /* Icons */
+    .benefit-icon,
+    .cert-icon,
+    .contact-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 1.3rem;
+    }
+
+    /* Cards */
+    .benefit-card,
+    .cert-card,
+    .testimonial-card,
+    .guarantee-item,
+    .contact-card {
+        padding: 1rem;
+    }
+
+    /* Summary Numbers */
+    .summary-number {
+        font-size: 2rem;
+    }
+
+    /* Guarantee */
+    .guarantee-icon {
+        font-size: 2.5rem;
+    }
+
+    .guarantee-text h2 {
+        font-size: 1.3rem;
+    }
+
+    /* Final CTA */
+    .final-cta-content h2 {
+        font-size: 1.75rem;
+    }
+
+    .pricing-ribbon {
+        font-size: 0.75rem;
+        padding: 6px 15px;
+    }
+
+    .current-price {
+        font-size: 2rem;
+    }
+
+    /* FAQ */
+    .faq-question h3 {
+        font-size: 0.95rem;
+    }
+
+    .faq-answer p {
+        font-size: 0.85rem;
+    }
+
+    /* Footer */
+    .footer-brand {
+        font-size: 1.1rem;
+    }
+
+    .footer-brand i {
+        font-size: 1.3rem;
+    }
+
+    .social-links a {
+        width: 35px;
+        height: 35px;
+        font-size: 1rem;
+    }
+}
+
+/* Landscape Mobile */
+@media (max-height: 600px) and (orientation: landscape) {
+    .hero {
+        min-height: auto;
+        padding: 120px 0 60px;
+    }
+
+    .hero-content {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .hero-image {
+        max-height: 400px;
+        overflow: hidden;
+    }
+
+    .hero-image img {
+        object-fit: cover;
+        height: 100%;
+    }
+}
+
+/* Print Styles */
+@media print {
+    .header,
+    .whatsapp-float,
+    .nav-actions,
+    .hero-cta,
+    .btn,
+    .social-links {
+        display: none;
+    }
+
+    body {
+        font-size: 12pt;
+        line-height: 1.5;
+        color: #000;
+    }
+
+    section {
+        page-break-inside: avoid;
+        padding: 20px 0;
+    }
+}
+
+/* Accessibility - Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+/* High Contrast Mode */
+@media (prefers-contrast: high) {
+    :root {
+        --primary-color: #1a5a25;
+        --primary-dark: #0f3515;
+        --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.3);
+        --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.3);
+        --shadow-lg: 0 10px 30px rgba(0, 0, 0, 0.4);
+    }
+
+    .btn-primary {
+        border: 2px solid var(--black);
+    }
+}
+
+/* Dark Mode (se o usuário preferir) */
+@media (prefers-color-scheme: dark) {
+    /* Atualmente o site usa cores claras propositalmente, 
+       mas podemos adicionar suporte a dark mode aqui */
+}
