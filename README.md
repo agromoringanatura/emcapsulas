@@ -106,22 +106,22 @@ Criar uma presença online profissional para venda de suplementos de Moringa Ole
   
   **Opção 1 - 1 Frasco:**
   - 120 cápsulas (30 dias)
-  - De: ~~R$ 147,00~~ Por: **R$ 97,00**
-  - 12x de R$ 9,70
+  - De: ~~R$ 147,00~~ Por: **R$ 77,00**
+  - 12x de R$ 7,86
   - Frete grátis*
   
   **Opção 2 - 3 Frascos (MAIS VENDIDO):**
   - 360 cápsulas (90 dias)
-  - De: ~~R$ 441,00~~ Por: **R$ 267,00**
-  - 12x de R$ 26,70
+  - De: ~~R$ 441,00~~ Por: **R$ 197,00**
+  - 12x de R$ 20,12
   - **Economize 40%**
   - Frete grátis
   - Badge "Mais Vendido"
   
-  **Opção 3 - 5 Frascos:**
-  - 600 cápsulas (150 dias)
-  - De: ~~R$ 735,00~~ Por: **R$ 397,00**
-  - 12x de R$ 39,70
+  **Opção 3 - 2 Frascos:**
+  - 240 cápsulas (60 dias)
+  - De: ~~R$ 735,00~~ Por: **R$ 157,00**
+  - 12x de R$ 16,03
   - **Economize 46%**
   - Frete grátis
 
