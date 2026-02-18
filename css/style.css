@@ -16,7 +16,7 @@
     --primary-light: #4a9d5e;
     --secondary-color: #5fba7d;
     --accent-color: #7ed957;
-    
+   
     /* Cores neutras */
     --white: #ffffff;
     --light-gray: #f8f9fa;
@@ -24,23 +24,23 @@
     --medium-gray: #6c757d;
     --dark-gray: #343a40;
     --black: #212529;
-    
+   
     /* Cores de destaque */
     --success: #28a745;
     --info: #17a2b8;
     --warning: #ffc107;
     --danger: #dc3545;
-    
+   
     /* Tipografia */
     --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
     --font-secondary: 'Poppins', sans-serif;
-    
+   
     /* Sombras */
     --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.05);
     --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.1);
     --shadow-lg: 0 10px 30px rgba(0, 0, 0, 0.15);
     --shadow-xl: 0 20px 40px rgba(0, 0, 0, 0.2);
-    
+   
     /* Transições */
     --transition: all 0.3s ease;
 }
@@ -48,67 +48,48 @@
 html {
     scroll-behavior: smooth;
 }
+
+/* ========================================
+   BARRA DE PROMOÇÃO (VERDE DEGRADÊ)
+   ======================================== */
 .promo-bar {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  background: linear-gradient(90deg, #1e5a2d, #2d7a3e);
-
-
-  color: #fff;
-  text-align: center;
-  padding: 10px 15px;
-  z-index: 9999;
-  font-family: 'Poppins', sans-serif;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: linear-gradient(90deg, #1e5a2d, #2d7a3e);
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 15px;
+    z-index: 9999;
+    font-family: 'Poppins', sans-serif;
 }
 
 .promo-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
 }
 
 .promo-text {
-  font-weight: 600;
-  font-size: 14px;
+    font-weight: 600;
+    font-size: 14px;
 }
 
 .countdown {
-  font-size: 20px;
-  font-weight: bold;
-  letter-spacing: 2px;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
 }
 
 .promo-warning {
-  font-size: 13px;
-  opacity: 0.9;
+    font-size: 13px;
+    opacity: 0.9;
 }
 
 /* Ajuste para não sobrepor conteúdo */
 body {
-  margin-top: 110px;
-}
-
-/* Animação botão comprar */
-.btn-primary {
-  animation: pulse 1.5s infinite;
-}
-
-@keyframes pulse {
-  0% { transform: scale(1); }
-  50% { transform: scale(1.05); }
-  100% { transform: scale(1); }
-}
-
-/* Mobile */
-@media (max-width: 768px) {
-  .countdown {
-    font-size: 18px;
-  }
-}
-
-body {
+    margin-top: 110px;
     font-family: var(--font-primary);
     font-size: 16px;
     line-height: 1.6;
@@ -126,68 +107,28 @@ body {
 section {
     padding: 80px 0;
 }
-.promo-bar {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  background: #b22222;
-  color: #fff;
-  text-align: center;
-  padding: 10px 15px;
-  z-index: 9999;
-  font-family: 'Poppins', sans-serif;
-}
-
-.promo-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 5px;
-}
-
-.promo-text {
-  font-weight: 600;
-  font-size: 14px;
-}
-
-.countdown {
-  font-size: 20px;
-  font-weight: bold;
-  letter-spacing: 2px;
-}
-
-.promo-warning {
-  font-size: 13px;
-  opacity: 0.9;
-}
-
-/* Ajuste para não sobrepor conteúdo */
-body {
-  margin-top: 110px;
-}
 
 /* Animação botão comprar */
 .btn-primary {
-  animation: pulse 1.5s infinite;
+    animation: pulse 1.5s infinite;
 }
 
 @keyframes pulse {
-  0% { transform: scale(1); }
-  50% { transform: scale(1.05); }
-  100% { transform: scale(1); }
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
 }
 
-/* Mobile */
+/* Mobile - Countdown menor */
 @media (max-width: 768px) {
-  .countdown {
-    font-size: 18px;
-  }
+    .countdown {
+        font-size: 18px;
+    }
 }
 
 /* ========================================
    TIPOGRAFIA
    ======================================== */
-
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-secondary);
     font-weight: 700;
@@ -195,6 +136,7 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 1rem;
     color: var(--dark-gray);
 }
+
 
 h1 { font-size: 3rem; }
 h2 { font-size: 2.5rem; }
