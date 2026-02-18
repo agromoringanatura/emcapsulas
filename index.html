@@ -933,24 +933,32 @@ src="https://www.facebook.com/tr?id=1947702662622528&ev=PageView&noscript=1"
 
 <script>
 function startCountdown(duration) {
-  let timer = duration, hours, minutes, seconds;
+  let timer = duration;
 
   setInterval(function () {
-    hours = parseInt(timer / 3600, 10);
-    minutes = parseInt((timer % 3600) / 60, 10);
-    seconds = parseInt(timer % 60, 10);
+
+    let hours = Math.floor(timer / 3600);
+    let minutes = Math.floor((timer % 3600) / 60);
+    let seconds = Math.floor(timer % 60);
 
     hours = hours < 10 ? "0" + hours : hours;
     minutes = minutes < 10 ? "0" + minutes : minutes;
     seconds = seconds < 10 ? "0" + seconds : seconds;
 
-    document.getElementById('hours').textContent = hours;
-    document.getElementById('minutes').textContent = minutes;
-    document.getElementById('seconds').textContent = seconds;
+    // Se for menos de 1 hora, mostra só minutos e segundos
+    if (duration < 3600) {
+      document.getElementById('hours').parentElement.innerHTML =
+        minutes + "m : " + seconds + "s";
+    } else {
+      document.getElementById('hours').textContent = hours;
+      document.getElementById('minutes').textContent = minutes;
+      document.getElementById('seconds').textContent = seconds;
+    }
 
     if (--timer < 0) {
-      timer = 30 * 60; // reinicia 30 minutos
+      timer = duration; // reinicia
     }
+
   }, 1000);
 }
 
