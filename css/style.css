@@ -124,6 +124,63 @@ body {
 section {
     padding: 80px 0;
 }
+.promo-bar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #b22222;
+  color: #fff;
+  text-align: center;
+  padding: 10px 15px;
+  z-index: 9999;
+  font-family: 'Poppins', sans-serif;
+}
+
+.promo-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+.promo-text {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.countdown {
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.promo-warning {
+  font-size: 13px;
+  opacity: 0.9;
+}
+
+/* Ajuste para não sobrepor conteúdo */
+body {
+  margin-top: 110px;
+}
+
+/* Animação botão comprar */
+.btn-primary {
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .countdown {
+    font-size: 18px;
+  }
+}
 
 /* ========================================
    TIPOGRAFIA
