@@ -1044,8 +1044,12 @@ p {
 
 .stars {
     display: flex;
-    justify-content: center;  /* ISSO CENTRALIZA */
     gap: 2px;
+}
+
+/* ADICIONE ISSO AQUI */
+.summary-item .stars {
+    justify-content: center;
 }
 
 .stars i {
