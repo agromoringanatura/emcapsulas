@@ -935,35 +935,29 @@ src="https://www.facebook.com/tr?id=1947702662622528&ev=PageView&noscript=1"
 function startCountdown(duration) {
   let timer = duration;
 
+  const countdownElement = document.getElementById("countdown");
+
   setInterval(function () {
 
-    let hours = Math.floor(timer / 3600);
-    let minutes = Math.floor((timer % 3600) / 60);
-    let seconds = Math.floor(timer % 60);
+    let minutes = Math.floor(timer / 60);
+    let seconds = timer % 60;
 
-    hours = hours < 10 ? "0" + hours : hours;
     minutes = minutes < 10 ? "0" + minutes : minutes;
     seconds = seconds < 10 ? "0" + seconds : seconds;
 
-    // Se for menos de 1 hora, mostra só minutos e segundos
-    if (duration < 3600) {
-      document.getElementById('hours').parentElement.innerHTML =
-        minutes + "m : " + seconds + "s";
-    } else {
-      document.getElementById('hours').textContent = hours;
-      document.getElementById('minutes').textContent = minutes;
-      document.getElementById('seconds').textContent = seconds;
-    }
+    countdownElement.innerHTML = minutes + "m : " + seconds + "s";
 
-    if (--timer < 0) {
-      timer = duration; // reinicia
+    if (timer > 0) {
+      timer--;
+    } else {
+      countdownElement.innerHTML = "Promoção Encerrada";
     }
 
   }, 1000);
 }
 
 window.onload = function () {
-  let thirtyMinutes = 30 * 60;
-  startCountdown(thirtyMinutes);
+  startCountdown(30 * 60); // 30 minutos
 };
 </script>
+
