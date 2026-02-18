@@ -1044,6 +1044,7 @@ p {
 
 .stars {
     display: flex;
+    justify-content: center;  /* ISSO CENTRALIZA */
     gap: 2px;
 }
 
