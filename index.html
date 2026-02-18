@@ -940,16 +940,16 @@ function startCountdown(duration) {
     minutes = parseInt((timer % 3600) / 60, 10);
     seconds = parseInt(timer % 60, 10);
 
-    hours = hours < 10 ? "0" + hours : hours;
-    minutes = minutes < 10 ? "0" + minutes : minutes;
-    seconds = seconds < 10 ? "0" + seconds : seconds;
+    hours = hours < 10 ? "00" + hours : hours;
+    minutes = minutes < 10 ? "30" + minutes : minutes;
+    seconds = seconds < 10 ? "00" + seconds : seconds;
 
     document.getElementById('hours').textContent = hours;
     document.getElementById('minutes').textContent = minutes;
     document.getElementById('seconds').textContent = seconds;
 
     if (--timer < 0) {
-      timer = 86400; // reinicia 24h
+      timer = 1800; // reinicia 24h
     }
   }, 1000);
 }
