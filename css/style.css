@@ -52,7 +52,9 @@ html {
   position: fixed;
   top: 0;
   width: 100%;
-  background: #b22222;
+  background: linear-gradient(90deg, #1e5a2d, #2d7a3e);
+
+
   color: #fff;
   text-align: center;
   padding: 10px 15px;
