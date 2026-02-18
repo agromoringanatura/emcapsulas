@@ -288,9 +288,10 @@ p {
     font-size: 1.1rem;
 }
 
+/* desativei animação alternativa de 2s
 .btn-pulse {
     animation: pulse 2s infinite;
-}
+} 
 
 @keyframes pulse {
     0%, 100% {
@@ -299,7 +300,9 @@ p {
     50% {
         transform: scale(1.05);
     }
-}
+} 
+/*
+
 
 /* ========================================
    WHATSAPP FLOAT BUTTON
