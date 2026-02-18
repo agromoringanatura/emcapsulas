@@ -935,22 +935,28 @@ src="https://www.facebook.com/tr?id=1947702662622528&ev=PageView&noscript=1"
 function startCountdown(duration) {
   let timer = duration;
 
-  const countdownElement = document.getElementById("countdown");
+  const hoursEl = document.getElementById("hours");
+  const minutesEl = document.getElementById("minutes");
+  const secondsEl = document.getElementById("seconds");
 
   setInterval(function () {
 
-    let minutes = Math.floor(timer / 60);
+    let hours = Math.floor(timer / 3600);
+    let minutes = Math.floor((timer % 3600) / 60);
     let seconds = timer % 60;
 
+    hours = hours < 10 ? "0" + hours : hours;
     minutes = minutes < 10 ? "0" + minutes : minutes;
     seconds = seconds < 10 ? "0" + seconds : seconds;
 
-    countdownElement.innerHTML = minutes + "m : " + seconds + "s";
+    hoursEl.textContent = hours;
+    minutesEl.textContent = minutes;
+    secondsEl.textContent = seconds;
 
     if (timer > 0) {
       timer--;
     } else {
-      countdownElement.innerHTML = "Promoção Encerrada";
+      document.getElementById("countdown").innerHTML = "Promoção Encerrada";
     }
 
   }, 1000);
